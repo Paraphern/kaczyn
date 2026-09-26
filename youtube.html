@@ -9,40 +9,42 @@
 <meta property="og:description" content="Скачайте видео или Shorts с YouTube: пришлите ссылку боту — получите mp4 или MP3. Бесплатно, без регистрации и программ.">
 <meta property="og:type" content="website">
 <style>
-:root{--bg:#0f1115;--card:#171a21;--tx:#e8eaf0;--mut:#9aa3b2;--ac:#4f8cff;--ac2:#7bd88f}
+:root{--bg:#f6ead7;--card:#fdf6e7;--tx:#173c5d;--mut:#8a7360;--ac:#173c5d;--ac2:#9d7672;--line:#e5d3b8}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font:16px/1.65 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--tx)}
 .wrap{max-width:880px;margin:0 auto;padding:24px 20px 80px}
 a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
 header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:34px}
-.logo{font-weight:800;font-size:20px;color:var(--tx)}
-.logo span{color:var(--ac)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--tx)}
+.logo img{width:34px;height:34px;border-radius:9px;object-fit:cover}
 nav a{margin-left:14px;color:var(--mut);font-size:14px}
-h1{font-size:34px;line-height:1.2;margin-bottom:14px;letter-spacing:-.5px}
-.sub{color:var(--mut);font-size:18px;margin-bottom:26px;max-width:640px}
-.btn{display:inline-block;background:var(--ac);color:#fff;font-weight:700;padding:13px 26px;border-radius:12px;font-size:16px}
-.btn:hover{background:#3d7bf0;text-decoration:none}
-.btn.green{background:var(--ac2);color:#08240f}
-.btn.green:hover{background:#69c97d}
+.hero{display:flex;gap:26px;align-items:center;margin-bottom:8px}
+.hero img{width:148px;height:148px;border-radius:20px;object-fit:cover;border:3px solid var(--tx);box-shadow:6px 6px 0 rgba(23,60,93,.18);flex:none}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.5px}
+.sub{color:var(--mut);font-size:18px;margin:14px 0 26px;max-width:640px}
+.btn{display:inline-block;background:var(--ac);color:#fef2e1;font-weight:700;padding:13px 26px;border-radius:12px;font-size:16px;box-shadow:4px 4px 0 rgba(23,60,93,.2)}
+.btn:hover{background:#12314d;text-decoration:none;transform:translate(1px,1px);box-shadow:3px 3px 0 rgba(23,60,93,.2)}
+.btn.rose{background:var(--ac2)}
+.btn.rose:hover{background:#8a6460}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:18px 0 34px}
-.svc{background:var(--card);border:1px solid #232833;border-radius:12px;padding:14px 16px;font-weight:600;font-size:15px}
+.svc{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:600;font-size:15px;color:var(--tx)}
+.svc:hover{border-color:var(--ac);text-decoration:none}
 .svc small{display:block;color:var(--mut);font-weight:400;font-size:12.5px;margin-top:3px}
 section{margin:38px 0}
 h2{font-size:23px;margin-bottom:14px;letter-spacing:-.3px}
 ol.steps{margin:0 0 8px 22px}ol.steps li{margin:8px 0}
-.card{background:var(--card);border:1px solid #232833;border-radius:14px;padding:22px 24px;margin:14px 0}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:22px 24px;margin:14px 0}
 ul.feat{margin:4px 0 4px 20px}ul.feat li{margin:5px 0}
-.note{border-left:3px solid var(--ac);padding:6px 14px;color:var(--mut);background:var(--card);border-radius:0 10px 10px 0;margin:16px 0}
-footer{border-top:1px solid #232833;margin-top:52px;padding-top:18px;color:var(--mut);font-size:13.5px}
+.note{border-left:3px solid var(--ac2);padding:6px 14px;color:var(--mut);background:var(--card);border-radius:0 10px 10px 0;margin:16px 0}
+footer{border-top:1.5px solid var(--line);margin-top:52px;padding-top:18px;color:var(--mut);font-size:13.5px}
 .crumbs{color:var(--mut);font-size:13.5px;margin-bottom:18px}
-.meta{color:var(--mut);font-size:14px}
-@media(max-width:560px){h1{font-size:27px}.sub{font-size:16px}}
+@media(max-width:560px){.hero{gap:16px}.hero img{width:96px;height:96px}h1{font-size:25px}.sub{font-size:16px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <div class="logo">Кач<span>инский</span></div>
+  <div class="logo"><img src="avatar.jpg" alt="Качинский"><b>Качинский</b></div>
   <nav><a href="https://paraphern.github.io/kaczyn/">Все сервисы</a><a href="https://t.me/kaczyn_bot">Открыть бота</a></nav>
 </header>
 
